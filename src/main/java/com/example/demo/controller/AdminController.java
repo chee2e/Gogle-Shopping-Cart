@@ -60,6 +60,13 @@ public class AdminController {
  
       return "login";
    }
+
+   // GET: Show Login Page
+   @RequestMapping(value = { "/admin/signin" }, method = RequestMethod.GET)
+   public String signin(Model model) {
+ 
+      return "signin";
+   }
  
    @RequestMapping(value = { "/admin/accountInfo" }, method = RequestMethod.GET)
    public String accountInfo(Model model) {
